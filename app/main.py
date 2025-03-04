@@ -10,8 +10,8 @@ from dotenv import load_dotenv  # Load environment variables
 
 # --- Load API keys ---
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY") # to run it locally
-# api_key = st.secrets["OPENAI_API_KEY"] # to run it on streamlit
+# api_key = os.getenv("OPENAI_API_KEY") # to run it locally
+api_key = st.secrets["OPENAI_API_KEY"] # to run it on streamlit
 openai.api_key = api_key
 
 # --- Streamlit UI Configuration ---
